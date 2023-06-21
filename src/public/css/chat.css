@@ -1,0 +1,30 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('ruta/de/la/imagen.jpg');
+    background-size: cover;
+  }
+
+  #chat-container {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    #chat-container {
+      width: auto;
+      margin: 20px;
+    }
+  }

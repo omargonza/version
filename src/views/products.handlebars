@@ -1,0 +1,50 @@
+<div>
+  {{#if title}}
+    <h1 class="listTitle">{{title}}</h1>
+  {{else}}
+    <h1>Unknown Title</h1>
+  {{/if}}
+  <div class="cardList">
+    {{#each products}}
+      <div class="card shadow">
+        <div class="card-body">
+          <h3 class="card-title">{{this.title}}</h3>
+          <ul style="list-style: none;">
+            <li class="card-text">{{this.id}}</li>
+            <li class="card-text">{{this.description}}</li>
+            <li class="card-text">{{this.stock}}</li>
+            <li class="card-text">{{this.category}}</li>
+            <li class="card-text">{{this.code}}</li>
+            <li class="card-text">{{this.price}}$</li>
+          </ul>
+    <div class="addToCart">
+  <a href="http://localhost:8085/productId{{this._id}}" class="addToCart-btn">Add to cart</a>
+</div>
+
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
+<div id="pagination" class="pagination">
+  {{#if prodColl.hasPrevPage}}
+    <a href={{prodColl.prevLink}}><ion-icon
+        name="chevron-back-outline"
+      ></ion-icon></a>
+  {{/if}}
+  <select name="pageSelector" id="pageSelect" class="page-select">
+    {{#each arrPages}}
+      <option value="{{this}}">{{this}}</option>
+    {{/each}}
+  </select>
+  {{#if prodColl.hasNextPage}}
+    <a href={{prodColl.nextLink}}><ion-icon
+        name="chevron-forward-outline"
+      ></ion-icon></a>
+  {{/if}}
+</div>
+<script>
+  let currentPage =
+  {{prodColl.page}}
+</script>
+<script src="/js/viewProducts.js"></script>

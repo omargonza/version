@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-top: 5rem;
+      margin-bottom: 3rem;
+    }
+
+    ul li {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 4rem;
+      font-size: 1.5rem;
+    }
+  </style>
+  <title>Bienvenido</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>{{welcome}}...<span>&#x1F3C4;</span></h1>
+    <div>
+      <ul class="list-unstyled">
+        <li>¿Quieres ver contenido estático? Solo ve a <a href="http://localhost:8085/products"
+            class="text-decoration-none fw-bold text-dark">http://localhost:8085/products</a></li>
+        <li>¿Demasiados productos, verdad? Sí, también soy perezoso <a href="http://localhost:8085/products/6"
+            class="text-decoration-none fw-bold text-dark">http://localhost:8085/products/6</a></li>
+        <li>¿Quieres jugar un poco con mi JSON en tiempo real? Echa un vistazo a <a
+            href="http://localhost:8085/realtimeproducts" class="text-decoration-none fw-bold text-dark">http://localhost:8085/realtimeproducts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
