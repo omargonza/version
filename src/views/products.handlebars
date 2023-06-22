@@ -48,3 +48,94 @@
   {{prodColl.page}}
 </script>
 <script src="/js/viewProducts.js"></script>
+
+<style>
+.listTitle {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.card-text {
+  margin-bottom: 5px;
+}
+
+.addToCart {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.addToCart-btn {
+  display: inline-block;
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-family: 'Nunito', sans-serif;
+}
+
+.addToCart-btn:hover {
+  background-color: #0062cc;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination a {
+  display: inline-block;
+  padding: 5px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'Nunito', sans-serif;
+}
+
+.pagination a:hover {
+  color: #0062cc;
+}
+
+.page-select {
+  margin: 0 10px;
+  padding: 5px;
+  font-family: 'Nunito', sans-serif;
+}
+
+  
+</style>

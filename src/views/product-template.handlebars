@@ -1,0 +1,19 @@
+
+  {{#each products}}
+    <tr>
+      <th scope="row">{{id}}</th>
+      <td>{{title}}</td>
+      <td>{{description}}</td>
+      <td>{{price}}</td>
+      <td>{{code}}</td>
+      <td>{{stock}}</td>
+      <td>{{category}}</td>
+      <td>
+        <img src="{{thumbnails}}" alt="{{id}}" title="Foto de {{title}}" style="width: 50px; min-height: 100%; max-height: 50px;" />
+      </td>
+      <td>
+        <button type="button" class="btn btn-danger" onclick="deleteProduct({{id}})">X</button>
+      </td>
+    </tr>
+  {{/each}}
+</script>
